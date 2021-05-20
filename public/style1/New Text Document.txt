@@ -1,0 +1,45 @@
+.contacts dl {
+  display: flex;
+}
+
+.contacts dt {
+  display: block;
+  
+}
+.contacts .contact-type {
+  display: grid;
+  background-color:  #333;
+}
+
+
+
+
+header div {
+  background-color: red;
+  display: flex;
+}
+dl {
+  display: flex;
+  border: solid 1px;
+  justify-self: start;
+}
+dt {
+  display: flex;
+  flex-basis: 10%;
+  background-color: red;
+}
+
+.contact-value {
+  display: flex;
+  justify-self: center;
+  background-color: black;
+  color: red;
+}
+.contact-value a {
+  color: red;
+  text-decoration: none;
+}
+
+section dl {
+  width: 500px;
+}

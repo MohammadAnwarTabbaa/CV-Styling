@@ -1,0 +1,173 @@
+header {
+  background-color: gray;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+header div {
+  display: flex;
+  margin-left: 20%;
+}
+#contact {
+  width: 50%;
+  position: absolute;
+  top: 10px;
+  right: 0;
+  height: 130px;
+}
+#contact h3 {
+  display: none;
+}
+.contacts {
+  background: linear-gradient(to right, red 0% 30%, black 30% 100%);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  line-height: 0.4;
+}
+dl {
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+dt {
+  grid-column: 1/2;
+  color: white;
+}
+dd {
+  grid-column: 2/3;
+  color: red;
+}
+dl a {
+  text-decoration: none;
+  color: red;
+}
+div.content {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 40% 40% 20%;
+  width: 80%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+#about {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+#competencies {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+.skill[data-skill="1"] span {
+  background-color: red;
+  width: 10%;
+}
+.skill[data-skill="3"] span {
+  background-color: red;
+  width: 30%;
+}
+.skill[data-skill="5"] span {
+  background-color: red;
+  width: 50%;
+}
+.skill[data-skill="7"] span {
+  background-color: red;
+  width: 70%;
+}
+.skill[data-skill="9"] span {
+  background-color: red;
+  width: 90%;
+}
+
+.skill {
+  margin-top: 20px;
+  display: flex;
+  background-color: gray;
+  padding: 2px;
+}
+
+.skills-secondary {
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  height: 40%;
+}
+.skills-primary {
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  height: 40%;
+  padding-bottom: 10px;
+}
+.skills-primary::before {
+  content: "Main";
+  line-height: 0;
+}
+.skills-secondary::before {
+  content: "Other";
+  line-height: 0;
+}
+
+#experiences {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+#education {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+#hobbies {
+  grid-column: 1/3;
+  grid-row: 3/4;
+  padding-top: 30px;
+}
+
+h3 {
+  border-bottom: solid 1px gray;
+}
+h3::before {
+  content: "";
+  height: 15px;
+  width: 15px;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+.experience-type {
+  color: red;
+  font-weight: bold;
+}
+.experience-institution {
+  opacity: 0.6;
+  color: red;
+}
+.experience-institution::before {
+  content: "@";
+}
+.experience-date-separator {
+  color: red;
+}
+.day,
+.month,
+.year,
+.experience-location {
+  color: gray;
+}
+.experience-location::before {
+  content: "In";
+  color: gray;
+}
+
+h4 {
+  margin-bottom: 0px;
+}
+.experience-location {
+  margin-left: 10px;
+}
